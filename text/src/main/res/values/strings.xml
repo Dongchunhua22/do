@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Text</string>
+    <string name="open">打开</string>
+    <string name="close" />
+    <string name="top">首页</string>
+    <string name="konwledge">知识分类</string>
+    <string name="model">模块分类</string>
+    <string name="clear">重置</string>
+    <string name="complete">完成</string>
+    <string name="onegradle">一年级</string>
+    <string name="twogradle">二年级</string>
+    <string name="threegradle">三年级</string>
+    <string name="fourgradle">四年级</string>
+    <string name="fivegradle">五年级</string>
+    <string name="sixgradle">六年级</string>
+    <string name="hotmodel">热门模块</string>
+</resources>

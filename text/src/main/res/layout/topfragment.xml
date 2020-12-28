@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:text="小学奥数"
+
+    android:id="@+id/small_school"
+    android:textSize="20sp"
+    android:layout_margin="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/top_search"
+        android:layout_margin="5dp"
+        app:layout_constraintRight_toLeftOf="@id/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/small_school"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/list"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/konwledge"
+        app:layout_constraintTop_toBottomOf="@id/top_search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/konwledge"
+        android:drawableRight="@drawable/down"
+        android:layout_weight="1"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/model"
+        app:layout_constraintTop_toBottomOf="@id/top_search"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="50dp"
+        android:text="@string/model"
+        android:drawableRight="@drawable/down"
+        android:layout_weight="1"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/xuanke_tab"
+      app:tabMode="scrollable"
+      app:layout_constraintTop_toBottomOf="@id/konwledge"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"/>
+<androidx.viewpager.widget.ViewPager
+    app:layout_constraintTop_toBottomOf="@id/xuanke_tab"
+    android:id="@+id/xuanke_page"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
